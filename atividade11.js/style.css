@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form, .actions {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+}
+
+.lista-contas {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.lista-contas div {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.button {
+    background-color: rgba(0, 102, 255, 0.473);
+    border-radius: 5px;
+    border-color: rgb(94, 94, 94);
+}

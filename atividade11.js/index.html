@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sistema de Gerenciamento de Banco</h1>
+
+        <div class="form">
+            <h2>Inserir Conta:</h2>
+            <label for="agencia"> <strong>Agência:</strong> </label>
+            <input type="text" id="agencia">
+            <br> <br>
+            <label for="numero"> <strong>Número:</strong> </label>
+            <input type="text" id="numero">
+            <br> <br>
+
+            <div class="actions">
+                <label for="tipo"> <strong>Tipo de Conta:</strong> </label>
+                <select id="tipo">
+                    <option value="Conta Corrente">Conta Corrente</option>
+                    <option value="Conta Poupança">Conta Poupança</option>
+                    <option value="Conta Universitária">Conta Universitária</option>
+                </select>
+            </div>
+
+            <label for="saldo"> <strong>Saldo:</strong> </label>
+            <input type="text" id="saldo">
+            <button onclick="inserirConta()" class="button">Inserir</button>
+
+            <h2>Sacar:</h2>
+            <label for="valorSaque"> <strong>Valor a Sacar:</strong> </label>
+            <input type="text" id="valorSaque">
+            <button onclick="sacar()" class="button">Sacar</button>
+        </div>
+
+        <div>
+            <h2>Deletar Conta:</h2>
+
+            <select id="contasDropdown" onchange="visualizarContas()"></select>
+            <button onclick="deletarConta()" class="button">Deletar Conta</button>
+
+            <h2>Visualizar contas:</h2>
+            <ul id="contasList"></ul>
+        </div>
+
+        <button onclick="visualizarContas()" class="button">Visualizar Contas</button>
+    </div>
+
+    <div id="listaContas" class="lista-contas"></div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
