@@ -1,8 +1,9 @@
 body {
     text-align: center;
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: justify;
     margin: 20px;
+    display: flex;
 }
 
 .container {
